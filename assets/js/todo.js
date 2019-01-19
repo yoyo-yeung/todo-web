@@ -1,7 +1,7 @@
 var list = [];
 
 function appendNewItem(item) {
-    let dom = $.parseHTML(`<li class='item ${item.completed?'completed' :''}'><span class="remove"><i class='far fa-trash' ></i></span> ${item.content}</li>`)[0]
+    let dom = $.parseHTML(`<li class='item ${item.completed?'completed' :''}'><span class="remove"><i class='fa fa-trash' ></i></span> ${item.content}</li>`)[0]
     $('ul').append(dom)
     return dom;
 }
